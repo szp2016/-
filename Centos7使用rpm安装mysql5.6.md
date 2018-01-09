@@ -21,6 +21,8 @@ error: Failed dependencies:
 ```
   安装缺少的依赖：
 `yum -y install libncurses.so.5`
+
+
  3. 安装mysql的服务端：
 
 安装服务端
