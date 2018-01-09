@@ -7,7 +7,7 @@
  2. 卸载原生的MySQL 
  `rpm -e --nodeps mysql-libs-5.1.71-1.el6.i686`
 
-##上传mysql到Centos7:
+## 上传mysql到Centos7:
  
 
  1. 安装依赖：
@@ -18,19 +18,19 @@
 error: Failed dependencies:
         libncurses.so.5 is needed by MySQL-client-5.6.22-1.el6.i686
         libtinfo.so.5 is needed by MySQL-client-5.6.22-1.el6.i686
-        ```
+```
         安装缺少的依赖：
-       `  yum -y install libncurses.so.5`
+       `yum -y install libncurses.so.5`
  3. 安装mysql的服务端：
 
 安装服务端
-`rpm -ivh MySQL-server-5.6.22-1.el6.i686.rpm `
+`rpm -ivh MySQL-server-5.6.22-1.el6.i686.rpm`
 安装mysql的客户端：
 `rpm -ivh MySQL-client-5.6.22-1.el6.i686.rpm`
 启动mysql的服务：
 启动MySQL服务
 `service mysql start`
-### 设置mysql初始密码并登陆MySQL:
+## 设置mysql初始密码并登陆MySQL:
 
 > A RANDOM PASSWORD HAS BEEN SET FOR THE MySQL root USER !
 You will find that password in '/root/.mysql_secret'.
@@ -51,7 +51,7 @@ See the manual for the semantics of the 'password expired' flag.**
 `select 1;`
 
 
-###设置开机自动启动mysql:
+### 设置开机自动启动mysql:
 加入到系统服务：
 chkconfig --add mysql
 自动启动：
