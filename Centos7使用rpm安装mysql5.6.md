@@ -19,8 +19,8 @@ error: Failed dependencies:
         libncurses.so.5 is needed by MySQL-client-5.6.22-1.el6.i686
         libtinfo.so.5 is needed by MySQL-client-5.6.22-1.el6.i686
 ```
-        安装缺少的依赖：
-       `yum -y install libncurses.so.5`
+  安装缺少的依赖：
+`yum -y install libncurses.so.5`
  3. 安装mysql的服务端：
 
 安装服务端
